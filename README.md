@@ -9,7 +9,7 @@ Odoo comes with a number of default applications that include 'Purchases Applica
 -  Implement a purchase-request module that is used by employees to send purchase requests to the Procurement department. Note that the procurement department would use this request to prepare an RFQ specified in item 1 above.
 
 Structure
-'''
+```
 ├── controllers
 │   ├── controllers.py
 │   └── __init__.py
@@ -25,5 +25,4 @@ Structure
 └── views
     ├── templates.xml
     └── views.xml
-
-'''
+```
