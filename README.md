@@ -1,3 +1,5 @@
+<img align="right" alt="Coding" width="400" src="">
+
 # Purchases-Extended  ![Static Badge](https://img.shields.io/badge/purchases_extended-v1.0-blue?style=for-the-badge)  ![GitHub contributors](https://img.shields.io/github/contributors/MartinKalema/purchases-extended?style=for-the-badge&logo=github)
 
 Odoo comes with a number of default applications that include 'Purchases Applications'. The RFQ module however, has some missing functionalities that need to be implemented. I will add a one-to-many relationship between an RFQ and Vendors. Create a customization in the system such that one RFQ could be assigned to several vendors at the model-level. Additionally, I will extend these features to the front-end interfaces such that it's possible for the end-user to perform such actions. In summary, i will 
