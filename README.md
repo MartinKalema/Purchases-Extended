@@ -1,4 +1,4 @@
-<img align="center" alt="Coding" width="300" src="./odoo_logo.svg">
+<img align="center" alt="Coding" width="300" src="./static/odoo_logo.svg">
 
 ## Purchases-Extended  ![GitHub contributors](https://img.shields.io/github/contributors/MartinKalema/purchases-extended?style=for-the-badge&logo=github) ![Static Badge](https://img.shields.io/badge/Odoo_version-v17.0-neon?style=for-the-badge)
 
