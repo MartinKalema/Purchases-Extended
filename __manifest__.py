@@ -11,7 +11,7 @@
     'category': 'Uncategorized',
     'sequence': -100,
     'version': '0.1',
-    'depends': ['base', 'mail', 'purchase'],
+    'depends': ['base', 'mail', 'purchase', 'account'],
     'data': [
         # 'security/ir.model.access.csv',
         'views/views.xml',

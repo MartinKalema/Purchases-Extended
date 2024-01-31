@@ -9,8 +9,8 @@
 <!--        <xpath expr="//field[@name='partner_id']" position="replace"/>-->
 <!--        <xpath expr="//field[@name='partner_ref']" position="replace"/>-->
         <xpath expr="//page[@name='products']" position="after">
-          <page name="vendors" string="Vendors">
-            <field name="vendor_ids">
+          <page name="vendors_page" string="Vendors">
+            <field name="relation_ids">
             </field>
           </page>
         </xpath>
