@@ -1,60 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
 <odoo>
   <data>
-    <!-- explicit list view definition -->
-<!--
-    <record model="ir.ui.view" id="purchase_rfq_upgrade.list">
-      <field name="name">purchase_rfq_upgrade list</field>
-      <field name="model">purchase_rfq_upgrade.purchase_rfq_upgrade</field>
+    <record id="inherited_purchase_order_form" model="ir.ui.view">
+      <field name="name">new_purchase_order_form</field>
+      <field name="model">purchase.order</field>
+      <field name="inherit_id" ref="purchase.purchase_order_form"/>
       <field name="arch" type="xml">
-        <tree>
-          <field name="name"/>
-          <field name="value"/>
-          <field name="value2"/>
-        </tree>
+        <xpath expr="//field[@name='currency_id']" position="after">
+          <field name="date"/>
+        </xpath>
       </field>
     </record>
--->
-
-    <!-- actions opening views on models -->
-<!--
-    <record model="ir.actions.act_window" id="purchase_rfq_upgrade.action_window">
-      <field name="name">purchase_rfq_upgrade window</field>
-      <field name="res_model">purchase_rfq_upgrade.purchase_rfq_upgrade</field>
-      <field name="view_mode">tree,form</field>
-    </record>
--->
-
-    <!-- server action to the one above -->
-<!--
-    <record model="ir.actions.server" id="purchase_rfq_upgrade.action_server">
-      <field name="name">purchase_rfq_upgrade server</field>
-      <field name="model_id" ref="model_purchase_rfq_upgrade_purchase_rfq_upgrade"/>
-      <field name="state">code</field>
-      <field name="code">
-        action = {
-          "type": "ir.actions.act_window",
-          "view_mode": "tree,form",
-          "res_model": model._name,
-        }
-      </field>
-    </record>
--->
-
-    <!-- Top menu item -->
-<!--
-    <menuitem name="purchase_rfq_upgrade" id="purchase_rfq_upgrade.menu_root"/>
--->
-    <!-- menu categories -->
-<!--
-    <menuitem name="Menu 1" id="purchase_rfq_upgrade.menu_1" parent="purchase_rfq_upgrade.menu_root"/>
-    <menuitem name="Menu 2" id="purchase_rfq_upgrade.menu_2" parent="purchase_rfq_upgrade.menu_root"/>
--->
-    <!-- actions -->
-<!--
-    <menuitem name="List" id="purchase_rfq_upgrade.menu_1_list" parent="purchase_rfq_upgrade.menu_1"
-              action="purchase_rfq_upgrade.action_window"/>
-    <menuitem name="Server to list" id="purchase_rfq_upgrade" parent="purchase_rfq_upgrade.menu_2"
-              action="purchase_rfq_upgrade.action_server"/>
--->
   </data>
 </odoo>
