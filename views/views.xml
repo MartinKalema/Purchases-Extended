@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
   <data>
-    <record id="inherited_purchase_order_form" model="ir.ui.view">
-      <field name="name">new_purchase_order_form</field>
+    <record id="purchase_order_form_inherited" model="ir.ui.view">
+      <field name="name">purchase_order_form_customized</field>
       <field name="model">purchase.order</field>
       <field name="inherit_id" ref="purchase.purchase_order_form"/>
       <field name="arch" type="xml">
-        <xpath expr="//field[@name='currency_id']" position="after">
-          <field name="date"/>
+<!--        <xpath expr="//field[@name='partner_id']" position="replace"/>-->
+<!--        <xpath expr="//field[@name='partner_ref']" position="replace"/>-->
+        <xpath expr="//page[@name='products']" position="after">
+          <page name="vendors" string="Vendors">
+            <field name="vendor_ids">
+            </field>
+          </page>
         </xpath>
       </field>
     </record>
